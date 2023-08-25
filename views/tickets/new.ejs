@@ -1,0 +1,11 @@
+
+
+<form method="POST" action="/flights/<%= flight._id %>/tickets">
+    <label>Seat</label>
+    <input name="seat" type="text">
+    <label>Price</label>
+    <input type="number" min="0" name="price">
+    <button type="submit">SUBMIT</button>
+</form>
+
+<%- include('../partials/footer') %>
